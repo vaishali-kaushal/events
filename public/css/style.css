@@ -1,0 +1,313 @@
+  /* General Styling */
+  body {
+    font-family: Arial, sans-serif;
+    color: #1c1b29;
+}
+
+/* Header Styling */
+header {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header h2 {
+    color: #E21E51;
+    font-weight: 600;
+    margin: 0;
+}
+
+.header-buttons .btn {
+    color: #F1F1F2;
+    background-color: #E21E51;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.header-buttons .btn:hover {
+    background: #4d40ff;
+    color: #ffffff;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, rgba(81, 82, 82, 0.5), rgba(59, 63, 64, 0.8)),
+    url("/images/ai-img.jpeg"), no-repeat center;
+
+background-size: cover;
+padding: 120px 20px;
+text-align: center;
+color: #F1F1F2;
+position: relative;
+
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #F1F1F2;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.hero .btn {
+    background: #E21E51;
+    border: none;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    transition: transform 0.3s;
+}
+
+.hero .btn:hover {
+    background: #4d40ff;
+    transform: scale(1.05);
+}
+
+/* Sections */
+.section {
+    padding: 60px 20px;
+    position: relative;
+}
+
+.section-title {
+    color: #E21E51;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    background-color: #ecf2f3;
+    align-items: center;
+}
+.sponsors{
+    background-color: #ecf2f3;
+}
+.venue{
+    background-color: #d6d6da;
+}
+
+.about .text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.about img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Join Us Section */
+.join-us {
+    background: linear-gradient(135deg, rgba(44, 44, 49, 0.5), rgba(64, 75, 77, 0.8)),
+    url("/images/backimg1 (4).jpeg") no-repeat center;
+ 
+background-size: cover;
+background-attachment: fixed;
+background-position: center;
+padding: 50px 0;
+color: white; /* Adjust text color for better visibility */
+}
+
+.section-title {
+text-align: center;
+margin-bottom: 30px;
+font-size: 2.5em; /* Adjust size as needed */
+}
+
+.join-us-item {
+
+text-align: center;
+padding: 40px 50px;
+background-size: cover;
+border-radius: 10px;
+transition: transform 0.3s;
+}
+
+.join-us-item:hover {
+transform: scale(1.05); 
+}
+.do-dit{
+padding: 70px 50px;
+margin-top: -30px;
+}
+
+.icon {
+width: 100px; /* Set width for the icons */
+height: auto; /* Keep aspect ratio */
+margin-bottom: 15px; /* Spacing between icon and text */
+}
+
+/* .join-us {
+    text-align: center;
+    background-color: #efeff5;
+}
+
+.join-us .icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+} */
+
+/* Sponsors Section */
+.sponsors .logo {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    background-color: #E21E51;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+.set-me{
+    border-bottom: 2px solid#E21E51;
+}
+.image-diss{
+    position: relative;
+}
+.honor{
+    position: absolute;
+    background: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    right: 140px;
+    top: -40px;
+}
+.honor-me{
+    position: absolute;
+    background: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    right: -6px;
+    top: 150px;
+}
+
+
+/* -----------------------------register-page-css------------------ */
+
+.buddle-section {
+    background: linear-gradient(135deg, #ef3b3b, #404ee8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+  }
+  .containerds {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+    max-width: 1200px;
+    width: 100%;
+  }
+  .form-column {
+    padding: 40px 30px;
+    backdrop-filter: blur(12px);
+  }
+  .image-column {
+    background: url("/images/ai-img.jpeg") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .image-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .form-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #fff;
+  }
+  .form-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .form-group input, .form-group select {
+    border: none;
+    border-radius: 50px;
+    padding: 12px 15px 12px 45px;
+    width: 100%;
+    outline: none;
+    background: rgba(255, 255, 255, 0.8);
+    transition: box-shadow 0.3s ease;
+  }
+  .form-group input:hover, .form-group input:focus {
+    box-shadow: 0px 0px 8px 3px rgba(255, 255, 255, 0.3);
+  }
+  .form-group i {
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+    color: #404ee8;
+    font-size: 18px;
+  }
+  .btn-primary {
+    background: linear-gradient(135deg, #404ee8, #ef3b3b);
+    border: none;
+    border-radius: 50px;
+    padding: 12px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .image-text {
+    color: #fff;
+    z-index: 1;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+  }
+  .auto-wid{
+    width: 80%!important;
+  }
+
+  /* -----------------------------register-page-css------------------ */
+
+@media (max-width: 768px) {
+
+  .buddle-section {
+    
+    height: auto;
+    
+}
+
+    .do-dit{
+padding: 40px 50px;
+margin-top: 0px;
+}
+
+}
