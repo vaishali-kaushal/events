@@ -10,7 +10,12 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
 </head>
-
+<style>
+    :root {
+        --hero-bg-url: url('{{ asset('images/ai-img.jpeg') }}');
+        --backimg-url: url('{{ asset('/images/backimg1\ \(4\).jpeg') }}');
+    }
+</style>
 <body>
 
     <!-- Header Section -->
@@ -20,7 +25,7 @@
             <div class="d-flex justify-content-between align-items-center">
 
                 <div class="logo">
-                    <h2>reBoot </h2>
+                    <button class="btn"> <a href="{{ url('/')}}" style="color: #fff; text-decoration: none;"><h2>reBoot </h2></a></button>
                 </div>
                 <div class="header-buttons">
                     <button class="btn"> <a href="{{ route('eventRegistration')}}" style="color: #fff; text-decoration: none;">Register</a></button>
@@ -76,7 +81,7 @@
             <div class="row">
                 <div class="col-md-4 mb-2 text-center">
                     <div class="join-us-item" style=" background: linear-gradient(135deg, rgba(77, 64, 255, 0.5), rgba(226, 30, 81, 0.8)),
-            url('/images/backimg1\ \(3\).jpeg') no-repeat center;">
+            url('{{ asset('/images/backimg1\ \(3\).jpeg')}}') no-repeat center;">
 
                         <h3>Networking</h3>
                         <p>Make valuable connections, and meet experts in your industry</p>
@@ -84,14 +89,14 @@
                 </div>
                 <div class="col-md-4 mb-2 text-center">
                     <div class="join-us-item do-dit" style=" background: linear-gradient(135deg, rgba(77, 64, 255, 0.5), rgba(226, 30, 81, 0.8)),
-             url('/images/backimg1\ \(1\).jpeg') no-repeat center;">
+             url('{{ asset('/images/backimg1\ \(1\).jpeg')}}') no-repeat center;">
                         <h3>LEARNING</h3>
                         <p>Upgrade yourself with the skills that matter the most</p>
                     </div>
                 </div>
                 <div class="col-md-4 mb-2 text-center">
                     <div class="join-us-item" style=" background: linear-gradient(135deg, rgba(77, 64, 255, 0.5), rgba(226, 30, 81, 0.8)),
-            url('/images/backimg1\ \(2\).jpeg') no-repeat center; ">
+            url('{{ asset('/images/backimg1\ \(2\).jpeg')}}') no-repeat center; ">
 
                         <h3>Experience</h3>
                         <p>Beautiful locations, Mouth-watering meals, Fun activities and much more</p>

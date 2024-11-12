@@ -10,7 +10,12 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
 </head>
-
+<style>
+    :root {
+        --hero-bg-url: url('{{ asset('images/ai-img.jpeg') }}');
+        --backimg-url: url('{{ asset('/images/backimg1\ \(4\).jpeg') }}');
+    }
+</style>
 <body>
 
     <!-- Header Section -->
@@ -20,10 +25,10 @@
             <div class="d-flex justify-content-between align-items-center">
 
                 <div class="logo">
-                    <h2>reBoot </h2>
+                    <button class="btn"> <a href="{{ url('/')}}" style="color: #fff; text-decoration: none;"><h2>reBoot </h2></a></button>
                 </div>
                 <div class="header-buttons">
-                    <button class="btn"> <a href="#" style="color: #fff; text-decoration: none;">Register</a></button>
+                    <!-- <button class="btn"> <a href="#" style="color: #fff; text-decoration: none;">Register</a></button> -->
                     
                 </div>
             </div>

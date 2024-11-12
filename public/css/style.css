@@ -36,13 +36,13 @@ header h2 {
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, rgba(81, 82, 82, 0.5), rgba(59, 63, 64, 0.8)),
-    url("/images/ai-img.jpeg"), no-repeat center;
+    var(--hero-bg-url), no-repeat center;
 
-background-size: cover;
-padding: 120px 20px;
-text-align: center;
-color: #F1F1F2;
-position: relative;
+    background-size: cover;
+    padding: 120px 20px;
+    text-align: center;
+    color: #F1F1F2;
+    position: relative;
 
 }
 
@@ -109,13 +109,13 @@ position: relative;
 /* Join Us Section */
 .join-us {
     background: linear-gradient(135deg, rgba(44, 44, 49, 0.5), rgba(64, 75, 77, 0.8)),
-    url("/images/backimg1 (4).jpeg") no-repeat center;
+   var(--backimg-url) no-repeat center;
  
-background-size: cover;
-background-attachment: fixed;
-background-position: center;
-padding: 50px 0;
-color: white; /* Adjust text color for better visibility */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 50px 0;
+    color: white; /* Adjust text color for better visibility */
 }
 
 .section-title {
@@ -226,7 +226,7 @@ footer {
     backdrop-filter: blur(12px);
   }
   .image-column {
-    background: url("/images/ai-img.jpeg") no-repeat center center/cover;
+    background: var(--hero-bg-url)  no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
